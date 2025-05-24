@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Transcript - IIIT Hyderabad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 2px solid #3498db;
+            background-color: white;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .header img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .header-text h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+        
+        .header-text h3 {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .header-right h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .navbar {
+            background-color: #34495e;
+            display: flex;
+            padding: 0;
+            border-bottom: 1px solid #2c3e50;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 14px;
+            border-right: 1px solid #2c3e50;
+            transition: background-color 0.3s;
+            display: block;
+        }
+        
+        .navbar a:hover {
+            background-color: #2c3e50;
+        }
+        
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #34495e;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-top: 2px solid #3498db;
+        }
+        
+        .dropdown-content a {
+            color: #ecf0f1;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            border-right: none;
+            border-bottom: 1px solid #2c3e50;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .nav-item:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Transcript container */
+        .transcript-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .download-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .download-icon {
+            width: 16px;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233498db'%3E%3Cpath d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        #result {
+            display: block;
+            margin: 40px auto 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .transcript-footer {
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="iiith.png" alt="IIIT Logo">
+            <div class="header-text">
+                <h1>International Institute of Information Technology, Hyderabad</h1>
+                <h3>2025-2026</h3>
+            </div>
+        </div>
+        <div class="header-right">
+            <h2>Akshit</h2>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">My IIITH</a>
+            <div class="dropdown-content">
+                <a href="#">Academic Awards</a>
+                <a href="Myiiitapp.html">My IIIT App</a>
+                <a href="#">Candidate Nomination Form</a>
+                <a href="#">Online Voting</a>
+                <a href="transcript.html">My Transcript</a>
+                <a href="#">Project Registrations</a>
+                <a href="#">Summer Project Registrations</a>
+                <a href="#">Time Table</a>
+                <a href="#">MS Courses Selection Form</a>
+                <a href="#">Fee Payment Details</a>
+                <a href="#">Course Registration</a>
+                <a href="#">Student Activities</a>
+                <a href="#">Fee Payment</a>
+                <a href="#">Fee Receipt</a>
+                <a href="#">Honours Applications (Student)</a>
+                <a href="#">Independent Study Registrations</a>    
+                <a href="#">Change Advisor Form</a>
+                <a href="#">Change Co Advisor Form</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Academics</a>
+            <div class="dropdown-content">
+                <a href="#">Data</a>
+                <a href="#">Survey</a>
+                <a href="#">Fees</a>
+                <a href="#">Sports</a>
+                <a href="#">Attendance</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Research</a>
+            <div class="dropdown-content">
+                <a href="#">Projects</a>
+                <a href="#">Publications</a>
+                <a href="#">Conferences</a>
+                <a href="#">Funding</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Main</a>
+            <div class="dropdown-content">
+                <a href="#">Announcements</a>
+                <a href="#">Calendar</a>
+                <a href="#">Resources</a>
+                <a href="#">Directory</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">BTP</a>
+            <div class="dropdown-content">
+                <a href="#">Project Proposals</a>
+                <a href="#">Supervisors</a>
+                <a href="#">Guidelines</a>
+                <a href="#">Submission</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Problem Reporting</a>
+            <div class="dropdown-content">
+                <a href="#">New Report</a>
+                <a href="#">My Reports</a>
+                <a href="#">Status</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Dashboard</a>
+            <div class="dropdown-content">
+                <a href="#">Overview</a>
+                <a href="#">Analytics</a>
+                <a href="#">Statistics</a>
+                <a href="#">Customize</a>
+            </div>
+        </div>
+        
+        <div class="nav-item">
+            <a href="#" class="has-dropdown">Logout</a>
+            <div class="dropdown-content">
+                <a href="#">Sign Out</a>
+                <a href="#">Switch Account</a>
+                <a href="#">Account Settings</a>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    
+    <div class="transcript-container">
+        <a href="A. .pdf" class="download-link" download>
+            <span class="download-icon"></span>
+            Download PDF
+        </a>
+        <img id="result" src="result.png">
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
